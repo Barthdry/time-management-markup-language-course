@@ -1,0 +1,18 @@
+title: Time management markup language
+description: >-
+  This is the time management markup language which is a data storing language
+  for time managing
+template:
+  repo: time-management-markup-language-template
+  name: time-management-markup-language
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
